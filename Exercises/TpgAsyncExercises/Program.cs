@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace TpgAsyncExercises
 {
-    // ReSharper disable once ClassNeverInstantiated.Global
     internal class Program
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
-            // Exercise1A();
+            // await Exercise1A();
             // Exercise2();
             // Exercise3("hello");
             Console.ReadKey();
@@ -43,7 +42,7 @@ namespace TpgAsyncExercises
         // possible but *must* be enqueued in input order 
         // IN other words, when "2" arrives, if "1" has not yet 
         // arrived then wait for it, otherwise enqueue "2" immediately.
-
+        
         #if FALSE
         public static async Task Exercise2()
         {
